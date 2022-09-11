@@ -31,14 +31,14 @@ export default function List() {
 
   return (
     <>
-      { listShown === "courses" && <div class="list">
+      { listShown === "courses" && <div className="list">
         { courses.map(course => 
             <Course key={course.id} info={course} />
         ) }
       </div>
       }
 
-      { listShown === "educators" && <EducatorsList class="list">
+      { listShown === "educators" && <EducatorsList className="list">
         { educators.map((educator) => <Educator key={educator.id} educator={educator} />) }
       </EducatorsList>
       }

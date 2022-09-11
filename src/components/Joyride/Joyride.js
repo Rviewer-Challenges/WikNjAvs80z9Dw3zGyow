@@ -39,6 +39,16 @@ const steps = [
   },
 ]
 
+function addToLocalStorage() {
+  localStorage.setItem('tour-shown', JSON.stringify(true));
+}
+
+function showTour() {
+  const shown = JSON.parse(localStorage.getItem('tour-shown'))
+
+  return !shown
+}
+
 export default function JoyrideItem() {
   const [run, setRun] = useState(false);
 
@@ -47,7 +57,10 @@ export default function JoyrideItem() {
   }, []);
 
   const handleStart = () => {
-    setRun(true);
+    const show = showTour()
+    if(show) {
+      setRun(true);
+    }
   };
 
   const handleJoyrideCallback = (data) => {
@@ -56,6 +69,7 @@ export default function JoyrideItem() {
 
     if (finishedStatuses.includes(status)) {
       setRun( false );
+      addToLocalStorage();
     }
   };
 
