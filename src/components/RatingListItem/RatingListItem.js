@@ -13,10 +13,14 @@ export default function RatingListItem({item}) {
   const {rating, message, created_at} = item
 
   function date(d) {
-    var options = { year: 'numeric', month: 'short', day: 'numeric' };
-    const date = new Date(d).toLocaleDateString("es-ES", options)
-    
-    return date
+    let date = new Date(d)
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+
+    if(d && d.seconds) {
+      date = new Date(d.seconds * 1000)
+    }
+
+    return date.toLocaleDateString("es-ES", options)
   }
 
   return (
