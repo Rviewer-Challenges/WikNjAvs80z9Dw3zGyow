@@ -1,4 +1,4 @@
-# RateIt
+# RateIT
 
 RateIt is an application for rating IT courses and educators to help people who want to learn, making it easier for them to find the best education for them.
 
