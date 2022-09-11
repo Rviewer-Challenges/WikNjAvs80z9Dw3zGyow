@@ -11,7 +11,8 @@ export const Main = styled.main`
   width: 100%;
   height: 100vh;
   background-color: ${colors.secondary.dark};
-  overflow: auto;
+  overflow: hidden;
+  overflow-y:auto;
 
   background: rgb(2,0,36);
   background: linear-gradient(${colors.secondary.main} 10%, ${colors.secondary.light} 100%);

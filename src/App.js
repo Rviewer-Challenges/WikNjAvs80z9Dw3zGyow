@@ -10,7 +10,6 @@ import {
 import { get } from '@database'
 import { Main } from '@/assets/style'
 import Header from '@/components/Header'
-import Joyride from '@/components/Joyride'
 import List from '@/views/List'
 import Course from '@/views/Course'
 import Educator from '@/views/Educator'
@@ -25,7 +24,6 @@ function App() {
   return (
     <Router>
       <Main>
-        <Joyride />
         <Reset />
         <Toaster/>
         <Header />

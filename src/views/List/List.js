@@ -5,6 +5,7 @@ import AddForm from '@/components/AddForm';
 import Course from '@/components/Course';
 import Educator from '@/components/Educator';
 import { get } from '@database'
+import Joyride from '@/components/Joyride'
 
 import { useDispatch } from 'react-redux'
 import { set, setListShown} from '@/redux/reducer'
@@ -31,6 +32,7 @@ export default function List() {
 
   return (
     <>
+      <Joyride />
       { listShown === "courses" && <div className="list">
         { courses.map(course => 
             <Course key={course.id} info={course} />
