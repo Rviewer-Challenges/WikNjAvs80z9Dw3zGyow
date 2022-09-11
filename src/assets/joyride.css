@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+.react-joyride__tooltip {
+  background-color: #2a363b!important;
+  color: white !important;
+
+  font-family: "Roboto", sans-serif !important;
+}
+
+.__floater__arrow polygon {
+  fill: #ff5449!important;
+}
+
+.react-joyride__tooltip button:nth-child(1) {
+  color: #ff847c !important;
+}
+
+.react-joyride__tooltip button:nth-child(2) {
+  color: white !important;
+}
+
+.react-joyride__tooltip button:nth-child(3) {
+  background-color: #ff5449 !important;
+}
+
+.react-joyride__beacon span:nth-child(1) {
+  background-color: #ff5449 !important;
+}
+
+.react-joyride__beacon span:nth-child(2) {
+  border-color: #ff5449 !important;
+}
