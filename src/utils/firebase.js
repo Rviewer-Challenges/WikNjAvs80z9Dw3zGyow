@@ -19,7 +19,7 @@ import {
 } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDfptxqwlSEavXY2vi5PmLRooy4ZhHUPo8",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "rate-it-e153b.firebaseapp.com",
   projectId: "rate-it-e153b",
   storageBucket: "rate-it-e153b.appspot.com",

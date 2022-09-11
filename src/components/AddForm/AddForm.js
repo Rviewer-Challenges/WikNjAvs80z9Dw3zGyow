@@ -38,7 +38,9 @@ export default function AddForm() {
     attendence_type: setAttendenceType,
     description: setDescription,
     link: setLink,
-    price: setPrice
+    price: setPrice,
+    previewImage: setPreviewImage,
+    profileImage: setProfileImage
   }
 
   async function getEducators() {
@@ -123,6 +125,7 @@ export default function AddForm() {
      if (result.ok) {
       toast('Gracias por la información!');
       setShow(false);
+      clearDocument();
     } else {
       toast('Algo ha fallado al subir la información');
     }
@@ -135,6 +138,12 @@ export default function AddForm() {
     const name = e.target.id
     const value = e.target.value
     setDocument[name](value)
+  }
+
+  function clearDocument () {
+    for (const key in setDocument) {
+      setDocument[key]('')
+    }
   }
   return (
       <>
