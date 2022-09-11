@@ -32,6 +32,10 @@ function tarnsformPrice(price) {
   return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + '€';
 }
 
+function formatRating(rating) {
+  return (rating / 20).toFixed(1)
+}
+
 export default function Course({info}) {
   const { name, price, attendence_type, average_rating, educator, speciality_type, total_ratings, id} = info
 
@@ -66,7 +70,7 @@ export default function Course({info}) {
         >
           <CourseTitle>{name}</CourseTitle>
           <CourseTopInfo>
-            <span>{average_rating} <FaStar alt="Valoración"/></span>
+            <span>{formatRating(average_rating)} <FaStar alt="Valoración"/></span>
             <span>{total_ratings} <FaUser /></span>
           </CourseTopInfo>
           <CourseInfoRow><FaHouseUser />{attendenceTypes[attendence_type]}</CourseInfoRow>
