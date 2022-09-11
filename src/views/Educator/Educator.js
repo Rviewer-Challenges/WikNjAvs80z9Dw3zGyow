@@ -24,6 +24,10 @@ import {
 
 const educatorTypes = transformTypesToObject(types.educators);
 
+function formatRating(rating) {
+  return (rating / 20).toFixed(1)
+}
+
 
 export default function Educator() {
   const { id } = useParams();
@@ -64,7 +68,7 @@ export default function Educator() {
               size="35"
             />
             <EducatorTopInfo>
-              <span>{educator?.average_rating} <FaStar alt="Valoración"/></span>
+              <span>{formatRating(educator?.average_rating)} <FaStar alt="Valoración"/></span>
               <span>{educator?.total_ratings} <FaUser /></span>
             </EducatorTopInfo>
             <EducatorType>{educatorTypes[educator?.type]}</EducatorType>

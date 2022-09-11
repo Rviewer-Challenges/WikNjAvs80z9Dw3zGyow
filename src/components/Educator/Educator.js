@@ -8,6 +8,10 @@ import { setElement } from '@/redux/reducer';
 
 const educatorTypes = transformTypesToObject(types.educators);
 
+function formatRating(rating) {
+  return (rating / 20).toFixed(1)
+}
+
 export default function Educator({ educator }) {
   const { name, image, type, id, average_rating, total_ratings} = educator;
 
@@ -27,7 +31,7 @@ export default function Educator({ educator }) {
       <EducatorImage src={image} alt={name} loading="lazy" />
       <EducatorName>{name}</EducatorName>
       <EducatorInfo>
-        <span>{average_rating} <FaStar alt="Valoración"/></span>
+        <span>{formatRating(average_rating)} <FaStar alt="Valoración"/></span>
         <span>{total_ratings} <FaUser /></span>
       </EducatorInfo>
       <EducatorType>{educatorTypes[type]}</EducatorType>
