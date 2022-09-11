@@ -1,31 +1,13 @@
-# Day of the Programmer Hackathon!
+# RateIt
 
-The **Day of the Programmer** is an international professional day that is celebrated on the 256th (hexadecimal 0x100,
-or 2<sup>8</sup>th)
-day of each year.
+RateIt is an application for rating IT courses and educators to help people who want to learn, making it easier for them to find the best education for them.
 
-This day is possible thanks to the community feeling we all have, sharing an improving as a whole. A community which
-does not stop sharing content and helping to each other!
+## Build with 🛠️
 
-So to keep promoting this feeling and good vibes on the community, we are creating this
-[hackathon](https://diadelaprogramacion.com/) with just a main objective: **To help the community!**
-
-![Brais Moure Challenge card](./.github/assets/mouredev_hackathon.png)
-> This hackathon is a collaboration between [MoureDev](https://www.twitch.tv/mouredev) and
-> [Rviewer](https://rviewer.io). He will review and give feedback to some proposed solutions from the community at the
-> end of the Hackathon 😻
-
----
-
-## How it works?
-
-From **30th of August to 11th of September** you have to create an app (web or mobile) through which you help the
-community at some point!
-
-But, first things first. Only **submissions done before 12th of September will be eligible** to participate on the
-Hackathon!
-
-You can submit the challenge at any other time and also receive feedback from [Rviewer](https://rviewer.io)!
+- [Npm](https://www.npmjs.com/)
+- [ReactJs](https://es.reactjs.org/)
+- [Styled components](https://styled-components.com/)
+- [Firebase](https://firebase.google.com/)
 
 ### Dates
 
